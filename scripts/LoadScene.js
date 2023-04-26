@@ -3,37 +3,37 @@ constructor(){
     super(sceneConfig);
 }
 preload(){
-    this.load.image("timeholder","/Color-Clockers/timeholder.png")
-    this.load.image("time", "/Color-Clockers/time.png")
-    this.load.image("pblue", "/Color-Clockers/blueparticle.png")
-    this.load.image("ppink", "/Color-Clockers/pinkparticle.png")
-this.load.image("sideblock","/Color-Clockers/sideblock.png")
-this.load.audio("click","/Color-Clockers/sounds/click.wav")
-    this.load.audio("explode", "/Color-Clockers/sounds/explosion.wav")
-    this.load.audio("hurt", "/Color-Clockers/sounds/click.wav")
-    this.load.audio("jump", "/Color-Clockers/sounds/jump.wav")
-    this.load.audio("music", "/Color-Clockers/sounds/music.mp3")
-    this.load.audio("win", "/Color-Clockers/sounds/win.wav")
-    this.load.audio("dooropen", "/Color-Clockers/sounds/dooropen.wav")
+    this.load.image("timeholder","/Clock-Clockers/assets/timeholder.png")
+    this.load.image("time", "/Clock-Clockers/assets/time.png")
+    this.load.image("pblue", "/Clock-Clockers/assets/blueparticle.png")
+    this.load.image("ppink", "/Clock-Clockers/assets/pinkparticle.png")
+this.load.image("sideblock","/Clock-Clockers/assets/sideblock.png")
+this.load.audio("click","/Clock-Clockers/assets/sounds/click.wav")
+    this.load.audio("explode", "/Clock-Clockers/assets/sounds/explosion.wav")
+    this.load.audio("hurt", "/Clock-Clockers/assets/sounds/click.wav")
+    this.load.audio("jump", "/Clock-Clockers/assets/sounds/jump.wav")
+    this.load.audio("music", "/Clock-Clockers/assets/sounds/music.mp3")
+    this.load.audio("win", "/Clock-Clockers/assets/sounds/win.wav")
+    this.load.audio("dooropen", "/Clock-Clockers/assets/sounds/dooropen.wav")
 
-    this.load.image("updownblock", "/Color-Clockers/downblock.png")
-    this.load.spritesheet("spring","/Color-Clockers/spring.png",
+    this.load.image("updownblock", "/Clock-Clockers/assets/downblock.png")
+    this.load.spritesheet("spring","/Clock-Clockers/assets/spring.png",
     {frameWidth:117,
     frameHeight:51})
-this.load.spritesheet("key","/Color-Clockers/key-white.png",{
+this.load.spritesheet("key","/Clock-Clockers/assets/key-white.png",{
     frameWidth:32,
     frameHeight:32
 })
-    this.load.image("pausebtn", "/Color-Clockers/pausebtn.png")
-    this.load.spritesheet("uis","/Color-Clockers/56x59gui.png",
+    this.load.image("pausebtn", "/Clock-Clockers/assets/pausebtn.png")
+    this.load.spritesheet("uis","/Clock-Clockers/assets/56x59gui.png",
     {frameWidth:56,
     frameHeight:59})
-    this.load.image("redclock","/Color-Clockers/redclock.png")
-    this.load.image("blueclock", "/Color-Clockers/blueclock.png")
-    this.load.image("spinner","/Color-Clockers/spinner.png")
+    this.load.image("redclock","/Clock-Clockers/assets/redclock.png")
+    this.load.image("blueclock", "/Clock-Clockers/assets/blueclock.png")
+    this.load.image("spinner","/Clock-Clockers/assets/spinner.png")
     this.add.text(322,213," Loading..................");
     this.plugins.get('rexwebfontloaderplugin').addToScene(this);
-this.load.spritesheet("spikes","/Color-Clockers/spikes.png",{
+this.load.spritesheet("spikes","/Clock-Clockers/assets/spikes.png",{
     frameWidth:114,
     frameHeight:87
 })
@@ -43,35 +43,35 @@ this.load.spritesheet("spikes","/Color-Clockers/spikes.png",{
         }
     };
     this.load.rexWebFont(config);
-    this.load.image("billboard","/Color-Clockers/billboard.png");
-    this.load.image("bgTile","/Color-Clockers/bgTile.png")
-    this.load.spritesheet("ui","/Color-Clockers/ui.png",
+    this.load.image("billboard","/Clock-Clockers/assets/billboard.png");
+    this.load.image("bgTile","/Clock-Clockers/assets/bgTile.png")
+    this.load.spritesheet("ui","/Clock-Clockers/assets/ui.png",
     {
         frameWidth:36,
         frameHeight:37.5
     })
-    this.load.spritesheet("player","/Color-Clockers/character/dj idle run.png",
+    this.load.spritesheet("player","/Clock-Clockers/assets/character/dj idle run.png",
     {
         frameWidth:32,
         frameHeight:32
     })
-this.load.image('tiles',"/Color-Clockers/gridtiles.png");
-this.load.tilemapTiledJSON("level1","/Color-Clockers/level1.json")
-    this.load.tilemapTiledJSON("level2", "/Color-Clockers/level2.json")
-    this.load.tilemapTiledJSON("level3", "/Color-Clockers/level3.json")
-    this.load.tilemapTiledJSON("level4", "/Color-Clockers/level4.json")
-    this.load.tilemapTiledJSON("level5", "/Color-Clockers/level5.json")
-    this.load.tilemapTiledJSON("level6", "/Color-Clockers/level6.json")
-    this.load.tilemapTiledJSON("level7", "/Color-Clockers/level7.json")
-    this.load.tilemapTiledJSON("level8", "/Color-Clockers/level8.json")
-    this.load.tilemapTiledJSON("level9", "/Color-Clockers/level9.json")
-    this.load.tilemapTiledJSON("level10", "/Color-Clockers/level10.json")
-    this.load.tilemapTiledJSON("level11", "/Color-Clockers/level11.json")
-    this.load.tilemapTiledJSON("level12", "/Color-Clockers/level12.json")
-    this.load.tilemapTiledJSON("level13", "/Color-Clockers/level13.json")
-    this.load.tilemapTiledJSON("level14", "/Color-Clockers/level14.json")
-    this.load.tilemapTiledJSON("level15", "/Color-Clockers/level15.json")
-this.load.spritesheet("door","/Color-Clockers/door.png",{
+this.load.image('tiles',"/Clock-Clockers/assets/gridtiles.png");
+this.load.tilemapTiledJSON("level1","/Clock-Clockers/assets/level1.json")
+    this.load.tilemapTiledJSON("level2", "/Clock-Clockers/assets/level2.json")
+    this.load.tilemapTiledJSON("level3", "/Clock-Clockers/assets/level3.json")
+    this.load.tilemapTiledJSON("level4", "/Clock-Clockers/assets/level4.json")
+    this.load.tilemapTiledJSON("level5", "/Clock-Clockers/assets/level5.json")
+    this.load.tilemapTiledJSON("level6", "/Clock-Clockers/assets/level6.json")
+    this.load.tilemapTiledJSON("level7", "/Clock-Clockers/assets/level7.json")
+    this.load.tilemapTiledJSON("level8", "/Clock-Clockers/assets/level8.json")
+    this.load.tilemapTiledJSON("level9", "/Clock-Clockers/assets/level9.json")
+    this.load.tilemapTiledJSON("level10", "/Clock-Clockers/assets/level10.json")
+    this.load.tilemapTiledJSON("level11", "/Clock-Clockers/assets/level11.json")
+    this.load.tilemapTiledJSON("level12", "/Clock-Clockers/assets/level12.json")
+    this.load.tilemapTiledJSON("level13", "/Clock-Clockers/assets/level13.json")
+    this.load.tilemapTiledJSON("level14", "/Clock-Clockers/assets/level14.json")
+    this.load.tilemapTiledJSON("level15", "/Clock-Clockers/assets/level15.json")
+this.load.spritesheet("door","/Clock-Clockers/assets/door.png",{
     frameWidth:16,
     frameHeight:32
 })
